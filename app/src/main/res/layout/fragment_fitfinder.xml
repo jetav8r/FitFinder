@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:elevation="1dp"
+    android:translationZ="1dp"
+    android:background="@android:color/white"
+    tools:context="com.fitfinder.fitfinder.fragments.FitFinderFragment">
+
+    <FrameLayout
+        android:id="@+id/profImageFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vertical_mini_margin">
+
+        <ImageView
+            android:id="@+id/profImage"
+            android:contentDescription="@string/desc_profile_image"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/ic_def_pic" />
+
+        <ProgressBar
+            android:id="@+id/imageProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/nameField"
+        android:text=""
+        android:layout_below="@+id/profImageFrame"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/vertical_mini_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        style="@style/Text.Large"/>
+
+    <TextView
+        android:id="@+id/locationText"
+        android:text="@string/roomie_looking_in"
+        android:textStyle="bold"
+        android:layout_below="@+id/nameField"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/vertical_mini_margin"
+        style="@style/Text.Small"/>
+
+    <TextView
+        android:id="@+id/locationField"
+        android:text=""
+        android:layout_below="@+id/nameField"
+        android:layout_toRightOf="@+id/locationText"
+        android:layout_toEndOf="@+id/locationText"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/vertical_mini_margin"
+        style="@style/Text.Small"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_below="@+id/locationField"
+        style="@style/RoomieCardQuestions"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/lookingForText"
+                android:text="@string/fitfinder_text_looking_for"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="@style/Text.Small"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:id="@+id/lookingForField"
+                android:text=""
+                android:layout_toRightOf="@+id/lookingForText"
+                android:layout_toEndOf="@+id/lookingForText"
+                style="@style/Text.Small"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/aboutMeText"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_below="@+id/layout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/vertical_mini_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        style="@style/Text.Small"/>
+
+    <TextView
+        android:id="@+id/aboutMeField"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aboutMeText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        style="@style/Text.Small"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp">
+
+        <view
+            android:id="@+id/chatButton"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            class="info.hoang8f.widget.FButton"
+            fbutton:buttonColor="?attr/colorAccent"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="2dp"
+            android:textColor="@color/icons"
+            fbutton:cornerRadius="5dp"
+            android:text="Chat"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+</RelativeLayout>
+
+

@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.fitfinder.fitfinder"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 10
+        versionName "2.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/sinch-android-rtc-3.6.0.jar')
+    compile files('libs/butterknife-6.1.0.jar')
+    compile files('libs/Parse-1.9.2.jar')
+    compile files('libs/bolts-android-1.2.0.jar')
+    compile files('libs/ParseFacebookUtilsV4-1.9.2.jar')
+    //compile 'com.google.android.gms:play-services:8.1.0'
+    compile files('libs/sinch-android-rtc-3.7.1.jar')
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:cardview-v7:23.1.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.afollestad:material-dialogs:0.7.4.2'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+    compile 'info.hoang8f:fbutton:1.0.5'
+    compile 'com.google.android.gms:play-services-maps:8.1.0'
+    compile 'com.google.android.gms:play-services-ads:8.1.0'
+    compile 'com.google.android.gms:play-services-location:8.1.0'
+    compile 'com.google.android.gms:play-services-nearby:8.1.0'
+    compile 'com.google.android.gms:play-services-gcm:8.1.0'
+}

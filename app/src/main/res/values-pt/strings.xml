@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FitFinder</string>
+    <string name="action_bar_my_profile">Meu Perfil</string>
+    <string name="action_delete_account">Deletar Conta</string>
+    <string name="action_delete_connection">Deletar conexão</string>
+    <string name="action_logout">Sair</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_settings">Configurações</string>
+    <string name="addUser">Adicionar Usuário</string>
+    <string name="button_accept">ACEITAR</string>
+    <string name="button_cancel">CANCELAR</string>
+    <string name="button_chats">Chats/Conexões</string>
+    <string name="button_create_profile">CRIAR PERFIL</string>
+    <string name="button_create_user">CRIAR USUÁRIO</string>
+    <string name="button_login">LOGIN</string>
+    <string name="button_reject">REJEITAR</string>
+    <string name="button_sign_in_email">Log in usando E-mail</string>
+    <string name="button_sign_in_facebook">Log in usando Facebook</string>
+    <string name="button_sign_up_email">Registrar usando E-mail</string>
+    <string name="button_update_profile">Atualizar o Perfil</string>
+    <string name="chats">Chats</string>
+    <string name="choice_both">Ambos</string>
+    <string name="choice_discovery">Pesquisável</string>
+    <string name="choice_female">Faminino</string>
+    <string name="choice_general_updates">Atualizações Gerais</string>
+    <string name="choice_male">Masculino</string>
+    <string name="choice_new_connections">Novas Conexões</string>
+    <string name="choice_new_messages">Mensagens</string>
+    <string name="choice_no">Não</string>
+    <string name="choice_privacy_policy">Políticas de Privacidade</string>
+    <string name="choice_terms">Termos de Serviço</string>
+    <string name="choice_yes">Sim</string>
+    <string name="deafult_user_string">Usuário</string>
+    <string name="desc_chat_image">Imagen de Chat</string>
+    <string name="desc_profile_image">Imagem de Perfil</string>
+    <string name="desc_save_profile">Botão Salvar Perfil</string>
+    <string name="desc_search_image">Procurar Imagem</string>
+    <string name="dialog_content_delete_connection">Apagar esta conexao?</string>
+    <string name="dialog_content_logout">Sair agora?</string>
+    <string name="dialog_negative">Cancelar</string>
+    <string name="dialog_positive_delete_connection">Apagar</string>
+    <string name="dialog_positive_logout">Sair</string>
+    <string name="dialog_title_delete_connection">Apagar Conexão</string>
+    <string name="dialog_title_logout">Sair</string>
+    <string name="editProfile">Editar Perfil</string>
+    <string name="edit_profile">Editar Perfil</string>
+    <string name="email_address">Digite o seu email</string>
+    <string name="empty_chat_list">Você não tem conexões\nUse a função procurar para encontrar conexões!</string>
+    <string name="empty_roomie_string">Não há correspondências na sua região.\nPor favor, clique aqui para atualizar.</string>
+    <string name="enter_email">Digite o email para usar como login</string>
+    <string name="enter_login_email">Digite o email de login</string>
+    <string name="enter_login_password">Digite a senha</string>
+    <string name="enter_password">Digite a senha desejada</string>
+    <string name="field_enter_location">Digite a cidade</string>
+    <string name="fitfinder_text_looking_for">Procurando por:\u0020</string>
+    <string name="forgotPassword">Esqueceu a senha?</string>
+    <string name="hint_about_me">Máx. 300 Caracteres</string>
+    <string name="login">Login</string>
+    <string name="message_hint">Diga algo</string>
+    <string name="message_new_connection">Você tem uma nova conexão!</string>
+    <string name="no">Não</string>
+    <string name="no_connection">Sem conexão com a internet</string>
+    <string name="offer_training">Eu estou oferecendo treinamento pessoal</string>
+    <string name="preference_discovery">Preferências de Descoberta</string>
+    <string name="preference_notification">Preferências de Notificações</string>
+    <string name="profileInfo">Informações de perfil</string>
+    <string name="question_about_me">Sobre mim</string>
+    <string name="question_drink">Você bebe?</string>
+    <string name="question_gender_pref">Qual é o seu sexo preferido?</string>
+    <string name="question_looking_for">O que você está procurando?</string>
+    <string name="question_nameText">Nome para exibir no perfil</string>
+    <string name="question_sex">Qual é o seu sexo?</string>
+    <string name="question_smoke">Você fuma?</string>
+    <string name="roomie_looking_in">Procurando em:\u0020</string>
+    <string name="roomie_text_drinks">Bebe:\u0020</string>
+    <string name="roomie_text_smokes">Fuma:\u0020</string>
+    <string name="saveProfile">SALVAR PERFIL</string>
+    <string name="searchResults">Procurar resultados</string>
+    <string name="search_for_cnx">Procurar por conexões</string>
+    <string name="search_for_partner">Procurando por um parceiro de treino</string>
+    <string name="search_for_trainer">Eu estou á procura de um treinador</string>
+    <string name="settings">Configurações</string>
+    <string name="sex_female">Feminino</string>
+    <string name="sex_male">Masculino</string>
+    <string name="title_activity_settings">Configurações</string>
+    <string name="title_chats">Chats</string>
+    <string name="title_roommate_search">Procurar</string>
+    <string name="title_where_looking">Em qual cidade você deseja procurar?</string>
+    <string name="toast_account_created">Conta Criada!</string>
+    <string name="toast_empty_fields">Por favor, preencha todos os campos</string>
+    <string name="toast_error_request">Erro processando a requisiçao</string>
+    <string name="toast_message_send_failed">Mensagem não enviada.</string>
+    <string name="toast_profile_updated">Perfil atualizado!</string>
+    <string name="toast_valid_location">Por favor selecione um local válido</string>
+    <string name="undiscoverable_text">Seu perfil está como não pesquisável!\nMude seu perfil para Pesquisável nas configurações para encontrar novas conexões!</string>
+    <string name="usernameHint">Digite o nome de perfil</string>
+    <string name="yes">Sim</string>
+    <string name="sendMessage">Enviar mensagem</string>
+    <string name="you">Você</string>
+    <string name="aboutMeText">Sobre\u0020</string>
+    <string name="prefTitle">Preferências</string>
+    <string name="fonts">Fontes</string>
+    <string name="action_show_profile">Mostrar Perfil</string>
+    <string name="changeFontText">Alterar fonte</string>
+    <string name="version"></string>
+    <string name="prefSearchDistance">Distância para procurar </string>
+    <string name="prefHowFarSearch">Selecione quão distante </string>
+    <string name="prefFontSelect">Selecionar fonte
+</string>
+
+    <string-array name="distances">
+        <item>1.6 km</item>
+        <item>40.2 km</item>
+        <item>161 km</item>
+        <item>805 km</item>
+        <item>Procurar no mundo inteiro!</item>
+    </string-array>
+
+</resources>

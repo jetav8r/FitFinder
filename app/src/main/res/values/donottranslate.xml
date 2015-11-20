@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="font_family_body_1_material" translatable="false">sans-serif</string>
+    <string name="pref_font" translatable="false">pref_font</string>
+    <string name="version" translatable="false">v 2.2</string>
+    <string name="google_maps_key">AIzaSyALkSpVB1daBE9msT3AJ1Gx9kwHqbbEPLM</string>
+
+
+    <string-array name="fonts">
+        <item>Bodoni-MT</item>
+        <item>Capture-It</item>
+        <item>Mvboli</item>
+        <item>Norican</item>
+        <item>Roboto</item>
+        <item>Sansation</item>
+        <item>Seaside-Resort</item>
+        <item>Walkway</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>bodoni-mt-black.ttf</item>
+        <item>Capture_it.ttf</item>
+        <item>mvboli.ttf</item>
+        <item>Norican-Regular.ttf</item>
+        <item>Roboto-Regular.ttf</item>
+        <item>Sansation-Regular.ttf</item>
+        <item>Seaside.ttf</item>
+        <item>Walkway_Black.ttf</item>
+    </string-array>
+
+
+
+    <string-array name="distanceValues">
+        <item>10</item>
+        <item>25</item>
+        <item>100</item>
+        <item>500</item>
+        <item>12500</item>
+    </string-array>
+
+
+</resources>

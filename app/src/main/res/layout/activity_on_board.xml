@@ -1,0 +1,385 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.fitfinder.fitfinder.activities.OnBoardActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2"
+        android:layout_above="@+id/linearLayout2"
+        android:fillViewport="true"
+        android:layout_below="@+id/app_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/updateNameText"
+                android:text="@string/question_nameText"
+                android:hint="@string/usernameHint"
+                style="@style/Text.Small.EditProfile"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/profileNameCardView"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/updateNameText">
+                <RelativeLayout
+                    android:id="@+id/nameLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="4dp">
+
+                    <EditText
+                        android:id="@+id/profileNameText"
+                        android:hint="@string/usernameHint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/locationText"
+                android:text="@string/title_where_looking"
+                android:layout_below="@id/profileNameCardView"
+                style="@style/Text.Small.EditProfile"
+                android:layout_marginTop="8dp" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/location_CardView"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/locationText">
+                <RelativeLayout
+                    android:id="@+id/locationLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="4dp">
+                    <AutoCompleteTextView
+                        android:id="@+id/locationField"
+                        android:hint="@string/field_enter_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/sexText"
+                android:text="@string/question_sex"
+                android:layout_below="@+id/location_CardView"
+                style="@style/Text.Small.EditProfile"
+                android:layout_marginTop="8dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/questionSexCardView"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/sexText">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sexLayout"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/sex_maleText"
+                        android:text="@string/sex_male"
+                        style="@style/Text.Medium.EditProfile"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp" />
+
+                    <TextView
+                        android:id="@+id/sex_femaleText"
+                        android:text="@string/sex_female"
+                        android:layout_below="@+id/sex_maleText"
+                        style="@style/Text.Medium.EditProfile"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/sex_genderGroup"
+                        android:layout_alignTop="@+id/sex_maleText"
+                        android:layout_alignBottom="@id/sex_femaleText"
+                        style="@style/RadioGroupStyle">
+
+                        <RadioButton
+                            android:id="@+id/sex_maleCheckBox"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="26dp"
+                            android:checked="false"
+                            android:layout_marginBottom="4dp" />
+
+                        <RadioButton
+                            android:id="@+id/sex_femaleCheckBox"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="26dp"
+                            android:paddingBottom="4dp" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/genderText"
+                android:text="@string/question_gender_pref"
+                android:layout_below="@+id/questionSexCardView"
+                style="@style/Text.Small.EditProfile"
+                android:layout_marginTop="8dp" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/questionGenderCardView"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/genderText">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/genderLayout"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/maleText"
+                        android:text="@string/choice_male"
+                        style="@style/Text.Medium.EditProfile"
+                        android:paddingTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/femaleText"
+                        android:text="@string/choice_female"
+                        android:layout_below="@+id/maleText"
+                        style="@style/Text.Medium.EditProfile"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/bothText"
+                        android:text="@string/choice_both"
+                        android:layout_below="@+id/femaleText"
+                        style="@style/Text.Medium.EditProfile"
+                        android:paddingBottom="8dp" />
+
+                    <RadioGroup
+                        android:id="@+id/genderGroup"
+                        style="@style/RadioGroupStyle"
+                        android:layout_alignBottom="@+id/bothText"
+                        android:layout_alignTop="@+id/maleText">
+
+                        <RadioButton
+                            android:id="@+id/maleCheckBox"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false" />
+
+                        <RadioButton
+                            android:id="@+id/femaleCheckBox"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:id="@+id/bothCheckBox"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/lookingForText"
+                android:text="@string/question_looking_for"
+                android:layout_below="@+id/questionGenderCardView"
+                style="@style/Text.Small.EditProfile"
+                android:layout_marginTop="8dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/questionLookingForCardView"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/lookingForText">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchingForLayout"
+                    android:nestedScrollingEnabled="true"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/trainerText"
+                        android:text="@string/search_for_trainer"
+                        style="@style/Text.Medium.EditProfile"
+                        android:paddingTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/offerText"
+                        android:text="@string/offer_training"
+                        android:layout_below="@+id/trainerText"
+                        style="@style/Text.Medium.EditProfile"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/partnerText"
+                        android:text="@string/search_for_partner"
+                        android:layout_below="@+id/offerText"
+                        style="@style/Text.Medium.EditProfile"
+                        android:paddingBottom="8dp" />
+
+                    <RadioGroup
+                        android:id="@+id/lookingForGroup"
+                        android:layout_alignTop="@+id/trainerText"
+                        android:layout_alignBottom="@id/partnerText"
+                        style="@style/RadioGroupStyle">
+
+                        <RadioButton
+                            android:id="@+id/trainerCheckBox"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:singleLine="true" />
+
+                        <RadioButton
+                            android:id="@+id/trainerOfferCheckBox"
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false" />
+
+                        <RadioButton
+                            style="@android:style/Widget.CompoundButton.CheckBox"
+                            android:id="@+id/partnerCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp">
+
+        <view
+            android:id="@+id/cancelButton"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            class="info.hoang8f.widget.FButton"
+            fbutton:buttonColor="?attr/divider"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="2dp"
+            android:textColor="@color/icons"
+            fbutton:cornerRadius="5dp"
+            android:text="@string/button_cancel"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!--<Button
+            android:id="@+id/cancelButton"
+            android:text="CANCEL"
+            style="@style/Buttons.OnBoard"
+            android:layout_weight="0.33"
+            android:layout_marginRight="@dimen/horizontal_mini_margin"
+            android:layout_marginLeft="0dp"/>-->
+
+
+        <view
+            android:id="@+id/submit_button"
+            android:visibility="gone"
+            android:layout_width="170dp"
+            android:layout_height="38dp"
+            class="info.hoang8f.widget.FButton"
+            fbutton:buttonColor="?attr/colorAccent"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="2dp"
+            android:textColor="@color/icons"
+            fbutton:cornerRadius="5dp"
+            android:text="@string/button_create_profile"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!--<Button
+            android:id="@+id/submitButton"
+            android:text="@string/button_create_profile"
+            style="@style/Buttons.OnBoard"
+            android:enabled="false"
+            android:background="@drawable/create_profile_button"
+            android:layout_weight="0.67"
+            android:layout_marginLeft="@dimen/horizontal_mini_margin"
+            android:layout_marginRight="0dp"
+            android:textColor="@android:color/white"/>-->
+    </RelativeLayout>
+
+</RelativeLayout>

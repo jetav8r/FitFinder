@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="marker_menu">
+        <item>View Profile</item>
+        <item>Chat</item>
+    </string-array>
+</resources>
